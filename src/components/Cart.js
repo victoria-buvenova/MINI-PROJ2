@@ -2,11 +2,8 @@ import {
     MDBBtn,
     MDBCard,
     MDBCardBody,
-    MDBCardImage,
-    MDBCardText,
     MDBCol,
     MDBContainer,
-    MDBIcon,
     MDBInput,
     MDBRow,
     MDBTypography,
@@ -94,7 +91,7 @@ import BootstrapCard from "./BootstrapCard";
                         <MDBTypography tag="h5" className="text-uppercase">
                           Total price
                         </MDBTypography>
-                        <MDBTypography tag="h5">$ {calculateTotal() + 5}</MDBTypography>
+                        <MDBTypography tag="h5">$ {(calculateTotal() + 5).toFixed(2)}</MDBTypography>
                       </div>
     
                       <MDBBtn color="dark" block size="lg">

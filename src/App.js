@@ -10,6 +10,7 @@ import RegisterForm from './components/RegisterForm';
 import { AuthProvider } from './context/AuthProvider';
 // import BootstrapCard from './components/BootstrapCard'
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 
 
 
@@ -26,6 +27,7 @@ function App() {
 <Route path="/register" element={<RegisterForm/>} />
 <Route path="/cart" element={<Cart/>} />
    </Routes>
+   <Footer/>
  </AuthProvider>
     
     

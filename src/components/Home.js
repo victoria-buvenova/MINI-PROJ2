@@ -3,9 +3,11 @@ import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import Footer from './Footer';
 
 export default function Home() {
   return (
+   
     <MDBCarousel showControls showIndicators>
       <MDBCarouselItem
         className='w-100 d-block'
@@ -32,5 +34,8 @@ export default function Home() {
         <h1>BUY 2 GET 60% OFF</h1>
       </MDBCarouselItem>
     </MDBCarousel>
+  
+ 
   );
+ 
 }
