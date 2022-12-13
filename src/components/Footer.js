@@ -1,5 +1,7 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import Map from '../components/Map';
+
 
 export default function Footer() {
   return (
@@ -97,19 +99,22 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-                New York, NY 10012, US
+                London, Bayliss Ave, UK
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
                 info@example.com
               </p>
               <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 44 234 567 88
               </p>
               <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> + 01 234 567 89
+                <MDBIcon color='secondary' icon='print' className='me-3' /> + 44 234 567 89
               </p>
             </MDBCol>
+              <div className="map-position">
+              <Map/>
+            </div>
           </MDBRow>
         </MDBContainer>
       </section>
@@ -120,6 +125,8 @@ export default function Footer() {
           MDBootstrap.com
         </a>
       </div>
+      
     </MDBFooter>
+    
   );
 }

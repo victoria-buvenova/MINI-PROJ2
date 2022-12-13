@@ -6,7 +6,6 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBCol,
-  MDBBtn
 } from 'mdb-react-ui-kit';
 
 import {useAuth} from '../context/AuthProvider';
@@ -38,8 +37,8 @@ export default function BootstrapCard(props) {
             </MDBCardText>
 
       {/* <Button variant="outline-primary" onClick= {() => addToCart(props)}>Add to cart</Button> */}
-      {props.fromCart ? <MDBBtn outline rounded className='mx-2' color='info' onClick={() => removeFromCart(props.item.id)}>Remove from cart</MDBBtn>
-      : <MDBBtn outline rounded className='mx-2' color='info' onClick={() => addToCart(props.item)}>Add to cart</MDBBtn>}
+      {props.fromCart ? <button type="button" class="btn btn-outline-info"Info onClick={() => removeFromCart(props.item.id)}>Remove</button>
+      : <button type="button" class="btn btn-outline-info" onClick={() => addToCart(props.item)}>Add to cart</button>}
 
       {/* {props.fromCart ? <button onClick={() => removeFromCart(props.item.id)}>Remove from cart</button>
       : <button onClick={() => addToCart(props.item)}>Add to cart</button>} */}

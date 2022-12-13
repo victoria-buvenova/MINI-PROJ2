@@ -11,7 +11,8 @@ import { AuthProvider } from './context/AuthProvider';
 // import BootstrapCard from './components/BootstrapCard'
 import Cart from './components/Cart';
 import Footer from './components/Footer';
-
+import { NotFound } from './components/NotFound';
+import Map from './components/Map';
 
 
 function App() {
@@ -26,8 +27,11 @@ function App() {
 <Route path="/signup" element={<Signup/>}/>
 <Route path="/register" element={<RegisterForm/>} />
 <Route path="/cart" element={<Cart/>} />
+<Route path='*' element={<NotFound />} />
    </Routes>
-   <Footer/>
+  
+   <Footer />
+   
  </AuthProvider>
     
     
