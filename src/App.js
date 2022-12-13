@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavigationBar from './components/NavigationBar';
+import { Route, Routes } from "react-router-dom";
+import Home from './components/Home';
+import Products from './components/Products';
+import Login from './components/Login';
+import Signup from './components/Signup';
+import RegisterForm from './components/RegisterForm';
+import { AuthProvider } from './context/AuthProvider';
+// import BootstrapCard from './components/BootstrapCard'
+import Cart from './components/Cart';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <AuthProvider>
+  <NavigationBar/>
+  <Routes> 
+<Route path="/" element={<Home/>}/> 
+<Route path="/products" element={<Products/>}/>
+<Route path="/login" element={<Login/>}/>
+<Route path="/signup" element={<Signup/>}/>
+<Route path="/register" element={<RegisterForm/>} />
+<Route path="/cart" element={<Cart/>} />
+   </Routes>
+ </AuthProvider>
+    
+    
   );
 }
 
