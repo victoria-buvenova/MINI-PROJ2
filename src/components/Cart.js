@@ -61,7 +61,7 @@ import BootstrapCard from "./BootstrapCard";
                         <MDBTypography tag="h5" className="text-uppercase">
                           items {cart.length}
                         </MDBTypography>
-                        <MDBTypography tag="h5">$ {calculateTotal()}</MDBTypography>
+                        <MDBTypography tag="h5">$ {calculateTotal().toFixed(2)}</MDBTypography>
                       </div>
     
                       <MDBTypography tag="h5" className="text-uppercase mb-3">
